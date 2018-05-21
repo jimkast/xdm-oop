@@ -1,5 +1,11 @@
 package org.jimkast.xdm.saxon;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
+import javax.xml.transform.Source;
 import net.sf.saxon.s9api.QName;
 import net.sf.saxon.s9api.SaxonApiException;
 import net.sf.saxon.s9api.XQueryCompiler;
@@ -14,13 +20,6 @@ import org.cactoos.scalar.IoCheckedScalar;
 import org.cactoos.scalar.StickyScalar;
 import org.jimkast.xdm.XQuery;
 import org.jimkast.xdm.Xdm;
-
-import javax.xml.transform.Source;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.HashMap;
-import java.util.Map;
 
 public final class XqSaxon implements XQuery {
     private static final XQueryCompiler XQUERY_COMPILER = XdmSaxon.PROCESSOR.newXQueryCompiler();

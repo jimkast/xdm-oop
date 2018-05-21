@@ -1,5 +1,13 @@
 package org.jimkast.xdm.saxon;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
 import net.sf.saxon.s9api.DocumentBuilder;
 import net.sf.saxon.s9api.Processor;
 import net.sf.saxon.s9api.SaxonApiException;
@@ -18,15 +26,6 @@ import org.cactoos.iterable.Mapped;
 import org.cactoos.scalar.StickyScalar;
 import org.cactoos.scalar.UncheckedScalar;
 import org.jimkast.xdm.Xdm;
-
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Iterator;
 
 public final class XdmSaxon implements SXdm {
     public static final SXdm EMPTY = SXdm.EMPTY;

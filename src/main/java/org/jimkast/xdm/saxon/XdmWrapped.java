@@ -1,6 +1,5 @@
 package org.jimkast.xdm.saxon;
 
-
 import org.jimkast.xdm.Xdm;
 
 public final class XdmWrapped extends XdmEnvelope {

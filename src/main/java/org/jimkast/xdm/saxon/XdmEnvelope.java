@@ -1,12 +1,11 @@
 package org.jimkast.xdm.saxon;
 
+import java.io.IOException;
+import java.util.Iterator;
+import javax.xml.transform.Source;
 import net.sf.saxon.s9api.XdmValue;
 import org.cactoos.Scalar;
 import org.jimkast.xdm.Xdm;
-
-import javax.xml.transform.Source;
-import java.io.IOException;
-import java.util.Iterator;
 
 public class XdmEnvelope implements SXdm {
     private final SXdm origin;

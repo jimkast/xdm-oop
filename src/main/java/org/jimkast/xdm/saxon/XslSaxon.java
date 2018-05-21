@@ -1,5 +1,13 @@
 package org.jimkast.xdm.saxon;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.io.Writer;
+import java.util.HashMap;
+import java.util.Map;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
 import net.sf.saxon.s9api.QName;
 import net.sf.saxon.s9api.SaxonApiException;
 import net.sf.saxon.s9api.XdmDestination;
@@ -15,15 +23,6 @@ import org.cactoos.scalar.IoCheckedScalar;
 import org.cactoos.scalar.StickyScalar;
 import org.jimkast.xdm.Xdm;
 import org.jimkast.xdm.Xsl;
-
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.Writer;
-import java.util.HashMap;
-import java.util.Map;
 
 public final class XslSaxon implements Xsl {
     private static final XsltCompiler XSLT_COMPILER = XdmSaxon.PROCESSOR.newXsltCompiler();

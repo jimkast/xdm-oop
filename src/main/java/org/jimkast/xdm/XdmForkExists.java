@@ -1,6 +1,5 @@
 package org.jimkast.xdm;
 
-
 import org.jimkast.xdm.saxon.XdmEnvelope;
 import org.jimkast.xdm.saxon.XdmSaxon;
 
