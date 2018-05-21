@@ -7,6 +7,15 @@
     <groupId>org.jimkast</groupId>
     <artifactId>xdm</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>xdm-oop</name>
+    <description>Object oriented Saxon and DOM wrapper for processing xml sources in an OOP style</description>
+
+    <scm>
+        <connection>scm:git@github.com:jimkast/xdm-oop.git</connection>
+        <developerConnection>scm:git@github.com:jimkast/xdm-oop.git</developerConnection>
+        <url>https://github.com/jimkast/xdm-oop</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -17,7 +26,7 @@
         <dependency>
             <groupId>net.sf.saxon</groupId>
             <artifactId>Saxon-HE</artifactId>
-            <version>9.8.0-8</version>
+            <version>9.8.0-12</version>
         </dependency>
 
         <dependency>
