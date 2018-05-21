@@ -1,6 +1,7 @@
-package org.jimkast.xdm;
+package org.jimkast.xdm.saxon;
 
-import org.jimkast.xdm.saxon.XdmEnvelope;
+import org.jimkast.xdm.XQuery;
+import org.jimkast.xdm.Xdm;
 
 public final class XqResult extends XdmEnvelope {
     public XqResult(XQuery xq, Xdm xdm) {

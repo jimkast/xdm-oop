@@ -1,6 +1,14 @@
 package org.jimkast.xdm.saxon;
 
-import net.sf.saxon.s9api.*;
+import net.sf.saxon.s9api.DocumentBuilder;
+import net.sf.saxon.s9api.Processor;
+import net.sf.saxon.s9api.SaxonApiException;
+import net.sf.saxon.s9api.XQueryCompiler;
+import net.sf.saxon.s9api.XQueryEvaluator;
+import net.sf.saxon.s9api.XQueryExecutable;
+import net.sf.saxon.s9api.XdmItem;
+import net.sf.saxon.s9api.XdmNode;
+import net.sf.saxon.s9api.XdmValue;
 import org.cactoos.Input;
 import org.cactoos.Scalar;
 import org.cactoos.Text;
@@ -17,6 +25,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
 
 public final class XdmSaxon implements SXdm {
@@ -29,7 +38,7 @@ public final class XdmSaxon implements SXdm {
     private final UncheckedScalar<XdmValue> val;
 
     public XdmSaxon() {
-        this(EMPTY.xdm());
+        this(new XdmValue(Collections.emptyList()));
     }
 
     public XdmSaxon(Object o) {

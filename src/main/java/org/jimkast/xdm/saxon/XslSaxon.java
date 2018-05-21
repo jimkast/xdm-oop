@@ -1,6 +1,11 @@
 package org.jimkast.xdm.saxon;
 
-import net.sf.saxon.s9api.*;
+import net.sf.saxon.s9api.QName;
+import net.sf.saxon.s9api.SaxonApiException;
+import net.sf.saxon.s9api.XdmDestination;
+import net.sf.saxon.s9api.XsltCompiler;
+import net.sf.saxon.s9api.XsltExecutable;
+import net.sf.saxon.s9api.XsltTransformer;
 import org.cactoos.Input;
 import org.cactoos.Scalar;
 import org.cactoos.io.InputStreamOf;

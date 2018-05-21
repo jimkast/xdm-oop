@@ -1,6 +1,7 @@
-package org.jimkast.xdm;
+package org.jimkast.xdm.saxon;
 
-import org.jimkast.xdm.saxon.XdmEnvelope;
+import org.jimkast.xdm.Xdm;
+import org.jimkast.xdm.Xsl;
 
 public final class XslResult extends XdmEnvelope {
     public XslResult(Xsl xsl, Xdm xdm) {
